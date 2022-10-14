@@ -1,0 +1,73 @@
+###############################################################################
+#
+# ParsInsert
+#
+# ParsInsert efficiently produces both a phylogenetic tree and taxonomic
+# classification for sequences for microbial community sequence analysis. 
+#
+###############################################################################
+
+      Summary: ParsInsert is a C++ implementation of Parsimonious Insertion. 
+               The algorithm exploits the knowledge provided by publicly 
+               available curated phylogenetic trees to efficiently insert new 
+               sequences and infer their taxonomic classification.  The 
+               ParsInsert placement of new sequences in the tree is 
+               deterministic which allows for distributed processing to quickly 
+               handle millions of reads.
+
+ Availability: ParsInsert source code and documentation are available at:
+                    http://parsinsert.sourceforge.net
+		
+      Contact: david.knox@colorado.edu
+
+###############################################################################
+##
+##  Developer : David Knox (david.knox@colorado.edu) Jan 2011
+##  Copyright : Copyright (C) 2007-2011 David Knox
+##
+##  Web site  : http://parsinsert.sourceforge.net/
+##
+###############################################################################
+##	  This file is part of ParsInsert.
+##
+##    ParsInsert is free software: you can redistribute it and/or modify
+##    it under the terms of the GNU General Public License as published by
+##    the Free Software Foundation, either version 3 of the License, or
+##    (at your option) any later version.
+##
+##    ParsInsert is distributed in the hope that it will be useful,
+##    but WITHOUT ANY WARRANTY; without even the implied warranty of
+##    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##    GNU General Public License for more details.
+##
+##    You should have received a copy of the GNU General Public License
+##    along with ParsInsert.  If not, see <http://www.gnu.org/licenses/>.
+###############################################################################
+
+##########################
+Release Notes:
+##########################
+
+Version: 1.01  
+    Inital Release
+
+##########################
+
+Version: 1.02  10/11/11
+    - Added '-p' option to print comment in each leaf node (default is off)
+    - Fixed bug: 0 execution time causing divide by zero
+    
+##########################
+
+Version: 1.03  10/17/11
+    - Added hack code to parse attributes for root node
+    
+##########################
+
+Version: 1.04  10/27/11
+    - Bug Fix. Building new branch in insertion tree, corrected branch lengths to new nodes.
+    - Added -D param to set tree branch length precision, Default to 5.
+    - Added  Branch lengths written to given precision.
+    
+##########################
+##########################
